@@ -235,6 +235,9 @@ For the example above, setting this property to `baggage1` results in an HTTP he
 If you want to propagate the baggage to the MDC, use the configprop:management.tracing.baggage.correlation.fields[] configuration property.
 For the example above, setting this property to `baggage1` results in an MDC entry named `baggage1`.
 
+If you want baggage values to be added as tags on spans, use the configprop:management.tracing.baggage.tag-fields[] configuration property.
+For the example above, setting this property to `baggage1` results in spans that are tagged with `baggage1=value1`.
+
 
 
 [[actuator.micrometer-tracing.tests]]
